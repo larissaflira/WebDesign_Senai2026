@@ -17,25 +17,39 @@
     <button id="btn-menu" aria-label="Abrir Menu" aria-expanded="false">
         ☰
     </button>
-   <div id="barra-progresso"></div>
-   <button id="btn-tema" title="Mudar Tema">🌙</button>
-    <nav id="navegacao" class="menu-escondido">
-        <ul class="lista-links">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+   <!-- Barra de progresso topo -->
+  <div id="barra-progresso"></div>
+
+  <div class="container-header">
+    <!-- Logo do Site -->
+    <div class="logo">
+      <a href="#">
+        <img src="C:\Users\alunoucj\Desktop\Web Design_LL\IMAGENS\VISIO.png">
+      </a>
+    </div>
+
+    <!-- Navegação -->
+    <nav id="navegacao">
+      <ul class="lista-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
+
+    <!-- Botão de Tema -->
+    <button id="btn-tema" title="Mudar Tema">🌙</button>
+  </div>
 </header>
 
-<h1>Venha conhecer a maior empresa de segurança do nordeste</h1>
+<!-- Seção Principal de Destaque (Hero Section) -->
+<section class="hero-section" id="inicio">
+  <h1>Venha conhecer a maior empresa de segurança do Nordeste</h1>
+  <h2>Não entregamos apenas câmeras ou tecnologia de ponta. O seu patrimônio e quem você ama estão protegidos 24 horas por dia.</h2>
+  <p class="slogan">VisioSeg: Visão total. Proteção absoluta.</p>
+</section>
     
-    <h2>Não entregamos apenas câmeras ou tecnologia de ponta o seu patrimônio e quem você ama estão protegidos, 24 horas.</h2>
-
-    
-    <p>VisioSeg: Visão total. Proteção absoluta.</p>
-    <button id="btn-abrir-modal" class="btn-destaque">Assinar Newsletter</button>
     <hr>
 
 <div id="carouselExample" class="carousel slide">
@@ -63,128 +77,112 @@
 </div>
 
 
+<section class="secao-servicos">
+  <div class="container">
+    
+    <!-- BLOCO 1: NOSSOS SERVIÇOS -->
+    <h2 class="titulo-secao">Nossos Serviços</h2>
+    
+    <div class="grid-servicos">
+      <div class="card-servico">
+        <div class="icone-servico">🛡️</div>
+        <h3>Segurança Híbrida</h3>
+      </div>
+      
+      <div class="card-servico">
+        <div class="icone-servico">🖥️</div>
+        <h3>ISOC</h3>
+      </div>
+      
+      <div class="card-servico">
+        <div class="icone-servico">📊</div>
+        <h3>Analíticos e Dados BI</h3>
+      </div>
+      
+      <div class="card-servico">
+        <div class="icone-servico">📹</div>
+        <h3>Segurança Eletrônica</h3>
+      </div>
+      
+      <div class="card-servico">
+        <div class="icone-servico">🚨</div>
+        <h3>Comunicação de Emergência</h3>
+      </div>
+      
+      <div class="card-servico">
+        <div class="icone-servico">🔒</div>
+        <h3>Soluções Safety</h3>
+      </div>
+    </div>
 
+    <!-- BLOCO 2: SETORES -->
+    <h2 class="titulo-secao secao-margem">Setores para os quais oferecemos nossos serviços</h2>
+    
+    <div class="grid-setores">
+      <div class="item-setor">🌾 Setor Pecuário</div>
+      <div class="item-setor">🏭 Setor da Indústria</div>
+      <div class="item-setor">🛍️ Setor do Varejo</div>
+      <div class="item-setor">🚚 Logística</div>
+      <div class="item-setor">🏗️ Construção e Bens Imóveis</div>
+      <div class="item-setor">🏛️ Administração Pública</div>
+      <div class="item-setor">🏥 Setor da Saúde</div>
+      <div class="item-setor">🎉 Eventos</div>
+      <div class="item-setor">🏨 Turismo e Hospitalidade</div>
+    </div>
 
-   <!-- Lista Refatorada com Bootstrap -->
-<div class="mt-4 mb-5">
-    <h3 class="fw-bold mb-3">Nossos serviços</h3>
-    <ul class="list-group">
-        
-        <li class="list-group-item">Segurança Híbrida</li>
-        <li class="list-group-item">ISOC</li>
-        <li class="list-group-item">Analíticos e Dados BI</li>
-        <li class="list-group-item">Segurança Eletrônica</li>
-        <li class="list-group-item">Comunicação de Emergência</li>
-        <li class="list-group-item">Soluções Safety</li>
-        
-           </ul>
+  </div>
+</section>
+<!-- Linha de Renderização dos Componentes -->
+<div class="row">
+
+  <!-- CARD 1 -->
+  <div class="col-md-4 col-12 mb-4">
+    <div class="card h-100 shadow-sm border-0 card-visioseg">
+      <div class="card-img-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSwbiJEM8mhgr-vFjPjIzvNoya_B_x1tUNXhrVaBBx3STfq6CQawCh8EU&s=10" class="card-img-top" alt="Intervenção Humana">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title titulo-card">Intervenção Humana imediata</h5>
+        <p class="card-text">Videomonitoramento e controle na palma da sua mão.</p>
+      </div>
+      <div class="card-footer bg-white border-0 text-center pb-3">
+        <a href="#" class="btn btn-visioseg w-100">Consultar Detalhes</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="col-md-4 col-12 mb-4">
+    <div class="card h-100 shadow-sm border-0 card-visioseg">
+      <div class="card-img-container">
+        <img src="https://cdn.awsli.com.br/600x450/2246/2246803/produto/138231839/f382410df9.jpg" class="card-img-top" alt="Equipamentos de Segurança">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title titulo-card">Melhores equipamentos</h5>
+        <p class="card-text">O cuidado aliado com tecnologia de ponta para a sua segurança.</p>
+      </div>
+      <div class="card-footer bg-white border-0 text-center pb-3">
+        <a href="#" class="btn btn-visioseg w-100">Consultar Detalhes</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="col-md-4 col-12 mb-4">
+    <div class="card h-100 shadow-sm border-0 card-visioseg">
+      <div class="card-img-container">
+        <img src="https://acttecnologia.com.br/wp-content/uploads/2022/09/man-at-a-recording-studio-music-production-scaled-e1664324334477.jpg" class="card-img-top" alt="Videomonitoramento">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title titulo-card">Vídeo monitoramento</h5>
+        <p class="card-text">Monitoramento 24 horas inteligente para sua propriedade.</p>
+      </div>
+      <div class="card-footer bg-white border-0 text-center pb-3">
+        <a href="#" class="btn btn-visioseg w-100">Consultar Detalhes</a>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-     <h3>Setores para os quais oferecemos nossos serviços</h3>
-     <ol>
-        <li>Setor Pecuário</li>
-        <li>Setor da indústria</li>
-        <li>Setor do Varejo</li>
-        <li>Logística</li>
-        <li>Construção e bens imóveis</li>
-        <li>Administração pública</li>
-        <li>Setor da saúde</li>
-        <li>Eventos</li>
-        <li>Turismo e hospitalidade</li>
-     </ol>   
-
-     
-<!-- Bloco de Seção Baseado em Grid -->
-
-<section class="container mt-5 mb-5">
-
- <!-- Linha de Cabeçalho da Seção -->
-<div class="row text-center mb-4">
-
-       <div class="col-12">
-
-          <h2 class="fw-bold">Catálogo de Serviços</h2>
-
-           
-        </div>
-   </div>
-
-   <!-- Linha de Renderização dos Componentes -->
-
-   <div class="row">
-
-       <!-- Ponto de Quebra (Breakpoint): Ocupa 4 colunas em telas médias+ e 12 colunas em telas móveis -->
-
-       <div class="col-md-4 col-12 mb-4">
-
-         <!-- Estrutura do Componente Card -->
-
-<div class="card h-100 shadow-sm border-0">
-
-   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSwbiJEM8mhgr-vFjPjIzvNoya_B_x1tUNXhrVaBBx3STfq6CQawCh8EU&s=10" class="card-img-top" alt="Placeholder da imagem de serviço withed="5px">
-   <div class="card-body">
-
-    <h5 class="card-title text-primary">Intervenção Humana imediata.</h5>
-
-       <p class="card-text">Videomonitoramento e controle na palma da sua mão.</p>
-
-   </div>
-
-   <div class="card-footer bg-white border-0 text-center">
-
-       <a href="#" class="btn btn-primary w-100">Consultar Detalhes</a>
-
-   </div>
-
-</div>
-
-       </div>
-
-       <div class="col-md-4 col-12 mb-4">
-
-         <!-- Estrutura do Componente Card -->
-
-<div class="card h-100 shadow-sm border-0">
-
-   <img src="https://cdn.awsli.com.br/600x450/2246/2246803/produto/138231839/f382410df9.jpg" class="card-img-top" alt="Placeholder da imagem de serviço" width="10px">
-
-   <div class="card-body">
-
-    <h5 class="card-title text-primary">Melhores equipamentos para sua segurança</h5>
-
-       <p class="card-text">O cuidado aliado com tecnologia de ponta.</p>
-
-   </div>
-
-   <div class="card-footer bg-white border-0 text-center">
-
-       <a href="#" class="btn btn-primary w-100">Consultar Detalhes</a>
-
-   </div>
-
-</div>
-
-       </div>
-
-       <div class="col-md-4 col-12 mb-4">
-
-         <!-- Estrutura do Componente Card -->
-
-<div class="card h-100 shadow-sm border-0">
-
-   <img src="https://acttecnologia.com.br/wp-content/uploads/2022/09/man-at-a-recording-studio-music-production-scaled-e1664324334477.jpg" class="card-img-top" alt="Placeholder da imagem de serviço width="10px">
-
-    <h5 class="card-title text-primary">Vídeo monitoramento</h5>
-
-       <p class="card-text">Monitoramento 24 horas para sua propriedade</p>
-
-   </div>
-
-   <div class="card-footer bg-white border-0 text-center">
-
-       <a href="#" class="btn btn-primary w-100">Consultar Detalhes</a>
-
    </div>
 
 </div>
@@ -196,39 +194,100 @@
 
 </section>
 
-    <h4>Nossas imagens</h4>
-    <img src="C:\Users\alunoucj\Desktop\Web Design_LL\IMAGENS\VISIO.png" width="500">
-    <h4>Nosso parceiro:</h4>
-    <p>Segue o link: <a href="https://www.segurpro.com.br/pequenos-medios-negocios/filiais/aracaju">SEGURPRO</a></p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWeuD4yZX1qg_ELADnKsnsgVIvIruLEyRg2XvtQ6nkyyxCbat_WmQh7LDO&s=10">
-
-    <hr>
-
-    <form class="mt-4">
-    <div class="mb-3">
-        <label for="nome" class="form-label fw-bold">Seu Nome:</label>
-        <!-- A classe form-control faz a mágica acontecer -->
-        <input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo...">
-    </div>
+      <div class="container">
     
-    <div class="mb-3">
-        <label for="email" class="form-label fw-bold">Seu E-mail:</label>
-        <input type="email" id="email" class="form-control" placeholder="contato@visioseg.com">
-    </div>
-<div class="mb-3">
-        <label for="whatsapp" class="form-label fw-bold">Seu whatsapp:</label>
-        <input type="whatsapp" id="whatsapp" class="form-control" placeholder="(79)99999-9999">
-    </div>
-    <!-- Olha a classe btn e btn-success do Bootstrap substituindo o botão antigo -->
-    <!-- Botão do Formulário (Ocupando 100% da largura) -->
-<button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+        <hr class="divisor-secao">
 
-</form>
-
-    <br>
-    <button type="button" onclick="alert('Olá! bem vindo ao VisioSeg')">Clique Aqui!</button>
+    <!-- Bloco de Parceria -->
+<div class="bloco-parceiro">
+  <h4 class="subtitulo-secao">Nossos Parceiros Oficiais</h4>
   
-    <p>Fale conosco enviado um <a href= "mailto:larissa.lira@exemplo.com.br">E-mail para contato</a></p>
+  <div class="grid-parceiros">
+    
+    <!-- PARCEIRO 1 -->
+    <div class="card-parceiro">
+      <img src="https://thumbs.dreamstime.com/b/%C3%ADcone-de-pessoas-neg%C3%B3cios-s%C3%ADmbolo-trabalho-equipa-vetor-funcion%C3%A1rios-da-empresa-figura-parceiro-profissional-436880480.jpg" alt="Logo SegurPro" class="img-parceiro">
+      <div class="info-parceiro">
+        <h5>SEGURPRO</h5>
+        <p>Soluções em segurança patrimonial e controle de acesso.</p>
+        <a href="https://www.segurpro.com.br/pequenos-medios-negocios/filiais/aracaju" target="_blank" class="btn-link-parceiro">
+          Conheça a SEGURPRO &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- PARCEIRO 2 -->
+    <div class="card-parceiro">
+      <img src="https://thumbs.dreamstime.com/b/%C3%ADcone-de-pessoas-neg%C3%B3cios-s%C3%ADmbolo-trabalho-equipa-vetor-funcion%C3%A1rios-da-empresa-figura-parceiro-profissional-436880480.jpg" alt="Logo NC Empresarial" class="img-parceiro">
+      <div class="info-parceiro">
+        <h5>NC Empresarial</h5>
+        <p>Gestão de serviços e infraestrutura corporativa.</p>
+        <a href="https://ncgrupoempresarial.com.br" target="_blank" class="btn-link-parceiro">
+          Conheça a NC Empresarial &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- PARCEIRO 3 -->
+    <div class="card-parceiro">
+      <img src="https://thumbs.dreamstime.com/b/%C3%ADcone-de-pessoas-neg%C3%B3cios-s%C3%ADmbolo-trabalho-equipa-vetor-funcion%C3%A1rios-da-empresa-figura-parceiro-profissional-436880480.jpg" alt="Logo Grupo Seg" class="img-parceiro">
+      <div class="info-parceiro">
+        <h5>Grupo Seg</h5>
+        <p>Especialistas em tecnologia e inteligência em segurança.</p>
+        <a href="https://gruposeg.com/unidade/aracaju/" target="_blank" class="btn-link-parceiro">
+          Conheça o Grupo Seg &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- PARCEIRO 4 -->
+    <div class="card-parceiro">
+      <img src="https://thumbs.dreamstime.com/b/%C3%ADcone-de-pessoas-neg%C3%B3cios-s%C3%ADmbolo-trabalho-equipa-vetor-funcion%C3%A1rios-da-empresa-figura-parceiro-profissional-436880480.jpg" alt="Logo Franca Vigilância" class="img-parceiro">
+      <div class="info-parceiro">
+        <h5>Franca Vigilância</h5>
+        <p>Vigilância armada e desarmada com excelência operacional.</p>
+        <a href="https://francavigilancia.com.br" target="_blank" class="btn-link-parceiro">
+          Conheça a Franca Vigilância &rarr;
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>  
+    </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <form class="mt-4 form-contato-visioseg">
+  <div class="mb-3">
+    <label for="nome" class="form-label fw-bold">Seu Nome:</label>
+    <input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo..." required>
+  </div>
+  
+  <div class="mb-3">
+    <label for="email" class="form-label fw-bold">Seu E-mail:</label>
+    <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="whatsapp" class="form-label fw-bold">Seu WhatsApp:</label>
+    <!-- Corrigido para type="tel" -->
+    <input type="tel" id="whatsapp" class="form-control" placeholder="(79) 99999-9999" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="mensagem" class="form-label fw-bold">Como podemos ajudar?</label>
+    <textarea id="mensagem" class="form-control" rows="4" placeholder="Escreva sua mensagem ou solicite um orçamento..."></textarea>
+  </div>
+
+  <!-- Botão de Envio com cores da VISIOSEG -->
+  <button type="submit" class="btn btn-enviar-visioseg w-100">Enviar Mensagem</button>
+</form>
+    <!-- Olha a classe btn e btn-success do Bootstrap substituindo o botão antigo -->
+   
 
 
     <!-- Seção de FAQ (Acordeão) -->
@@ -295,7 +354,37 @@
         <button class="btn-destaque">Inscrever-se</button>
     </div>
     </div>
+    <!-- RODAPÉ DO SITE -->
+<footer class="rodape-site">
+  <div class="container-rodape">
     
+    <!-- COLUNA 1: BOAS-VINDAS -->
+    <div class="coluna-rodape">
+      <h5 class="titulo-coluna">Boas-vindas</h5>
+      <button type="button" class="btn-rodape" onclick="alert('Olá! Bem-vindo ao VisioSeg')">
+        Clique Aqui!
+      </button>
+    </div>
+
+    <!-- COLUNA 2: CONTATO -->
+    <div class="coluna-rodape">
+      <h5 class="titulo-coluna">Fale Conosco</h5>
+      <p>Envie um <a href="mailto:larissa.lira@exemplo.com.br" class="link-email">E-mail para contato</a></p>
+    </div>
+
+    <!-- COLUNA 3: NEWSLETTER -->
+    <div class="coluna-rodape">
+      <h5 class="titulo-coluna">Novidades</h5>
+      <button id="btn-abrir-modal" class="btn-destaque">Assinar Newsletter</button>
+    </div>
+
+  </div>
+
+  <!-- DIREITOS AUTORAIS -->
+  <div class="copyright">
+    <p>&copy; VisioSeg - Todos os direitos reservados.</p>
+  </div>
+</footer>
 <button id="btn-topo" class="escondido">⬆️ Topo</button>
 <!-- JavaScript do Bootstrap (necessário para componentes interativos) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
